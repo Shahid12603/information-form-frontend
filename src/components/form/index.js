@@ -90,6 +90,7 @@ const ContactForm = () => {
                 axios.post(CREATE_URL, formData)
                     .then((res) => {
                         console.log('Form data submitted:', res.data);
+                        navigate('/table');
                         setFormData({
                             name: '',
                             email: '',
